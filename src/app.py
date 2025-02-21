@@ -61,13 +61,13 @@ try:
     auth_manager = SpotifyClientCredentials(client_id = client_id, client_secret = client_secret)
     # authenticate request
     sp = spotipy.Spotify(auth_manager=auth_manager)
-    
+
     # info from artist
     # urn = 'spotify:artist:4x3Vb1a9yggcqEuRljiLeB'
     # artist = sp.artist(urn)
     # print("\n","Artist JSON", artist,"\n")
+
     # Send POST to request to the api token
-    
     # El Vega Life: 4x3Vb1a9yggcqEuRljiLeB
     # Pitbull: 0TnOYISbd1XYRBk9myaseg
     id = "4x3Vb1a9yggcqEuRljiLeB"
@@ -97,25 +97,6 @@ try:
     plt.title("Relación entre Duración y Popularidad de Canciones")
     plt.show()
 
-    # Defino una función
-    # albums = artist_top_10['tracks']
-    # for album in albums: # Lista de dict de albums
-    #     #print(album,'\n\n')
-    #     artists = album['artists']
-    #     print("Artists:",artists,'\n\n')
-    #     duration_ms = album['duration_ms']
-    #     print("Duration:",duration_ms,'\n\n')
-    #     name = album['name']
-    #     print("Name:",name,'\n\n')
-    #     popularity = album['popularity']
-    #     print("Popularity:",popularity,'\n\n')
-    #     artis_list = []
-    #     for artist in artists:
-    #         artis_list.append(artist['name'])
-    #     print("Artist List",artis_list)
-
-    #print("\n","Top 10 Tracks",artist_top_10)
-
     ## Diferentes playlists
     # playlists = sp.user_playlists('spotify')
     # while playlists:
@@ -125,8 +106,6 @@ try:
     #         playlists = sp.next(playlists)
     #     else:
     #         playlists = None
-
-    
 
 except Exception as e:
     print(f"Something went wrong:{e}")
