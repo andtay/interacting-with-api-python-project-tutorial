@@ -32,7 +32,7 @@ CLIENT_SECRET="insert your client secret"
 
 > NOTA: Asegúrate de agregar el `.env` dentro de tu archivo `.gitignore`, el cual no queremos guardar en el control de fuente, para que no estés poniendo en riesgo información potencialmente confidencial.
 
-Ahora, debes instalar `python-dotenvpackage`. Este es un paquete de Python que permite que tu aplicación de Python lea un archivo `.env`. Este paquete buscará un `.env` y, si lo encuentra, expondrá las variables que contiene a la aplicación.
+Ahora, debes instalar `python-dotenv`. Este es un paquete de Python que permite que tu aplicación de Python lea un archivo `.env`. Este paquete buscará un `.env` y, si lo encuentra, expondrá las variables que contiene a la aplicación.
 
 Ejemplo:
 
